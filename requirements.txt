@@ -225,7 +225,7 @@ PySocks @ file:///tmp/build/80754af9/pysocks_1605305812635/work
 pytest==8.0.2
 python-dateutil==2.8.2
 python-json-logger==2.0.7
-python-multipart==0.0.6
+python-multipart==0.0.30
 pytorch-crf==0.7.2
 pytorch_revgrad==0.2.0
 pytorchvideo==0.1.5
