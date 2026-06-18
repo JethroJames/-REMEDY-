@@ -290,7 +290,6 @@ toolz==0.12.0
 torch==2.12.1
 torchaudio==0.12.1
 torchvision==0.13.1+cu113
-tornado==6.5.7
 tqdm==4.66.3
 traitlets==5.14.0
 transformer-smaller-training-vocab==0.3.3
