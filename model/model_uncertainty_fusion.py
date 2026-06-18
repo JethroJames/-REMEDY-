@@ -1,4 +1,5 @@
 from typing import List
+from pathlib import Path
 import torch
 from torch import nn
 import torch.nn.functional as F
@@ -163,8 +164,12 @@ class MyModel(nn.Module):
             edl_model = Tagger_Evidence(args, constants.LABEL_SET_SIZE)
 
         if args.encoder_v:
+            if Path(args.encoder_v).name != args.encoder_v:
+                raise ValueError("encoder_v must be a torchvision model name, not a file path")
             encoder_v = getattr(torchvision.models, args.encoder_v)()
-            encoder_v.load_state_dict(torch.load(f'{models_path}/cnn/{args.encoder_v}.pth'))
+            state_path = Path(models_path) / 'cnn' / f'{args.encoder_v}.pth'
+            state_dict = torch.load(state_path, map_location='cpu', weights_only=True)
+            encoder_v.load_state_dict(state_dict)
             hid_dim_v = encoder_v.fc.in_features
         else:
             encoder_v = None
