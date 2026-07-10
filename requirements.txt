@@ -136,7 +136,7 @@ matplotlib==3.7.0
 matplotlib-inline==0.1.6
 mdit-py-plugins==0.3.3
 mdurl==0.1.2
-mistune==3.2.1
+mistune==3.3.0
 mkl-fft @ file:///croot/mkl_fft_1695058164594/work
 mkl-random @ file:///croot/mkl_random_1695059800811/work
 mkl-service==2.4.0
