@@ -171,7 +171,7 @@ nvidia-cusparse-cu12==12.1.0.106
 nvidia-nccl-cu12==2.18.1
 nvidia-nvjitlink-cu12==12.3.101
 nvidia-nvtx-cu12==12.1.105
-oauthlib==3.2.2
+oauthlib==4.0.0
 omegaconf==2.3.0
 openai==0.27.0
 opencv-python==4.8.1.78
